@@ -306,6 +306,13 @@ html body .ui-group-theme-a .ui-bar-inherit{
 	box-shadow:none !Important;
 	font-weight:400 !important;
 }
+.range-slider input, 
+.range-slider .ui-slider-handle {
+	box-shadow:none !Important;
+}
+.range-slider .ui-slider-bg {
+	background-color:#001848 !important;
+}
 
 /* Forms Live Edit */
 .live-edit .ui-input-text,
