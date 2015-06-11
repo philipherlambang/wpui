@@ -567,3 +567,11 @@ html body .ui-group-theme-a .ui-bar-inherit{
 .ui-selectmenu.ui-dialog .ui-header {
 	border-bottom-width: 1px;
 }
+
+.range-slider input, 
+.range-slider .ui-slider-handle {
+	box-shadow:none !Important;
+}
+.range-slider .ui-slider-bg {
+	background-color:#001848 !important;
+}
