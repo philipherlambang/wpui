@@ -330,11 +330,3 @@ html body .ui-group-theme-a .ui-bar-inherit{
 	background-position: 50% !important;
 	transform: translateY(20%) !important;
 }
-
-.range-slider input, 
-.range-slider .ui-slider-handle {
-	box-shadow:none !Important;
-}
-.range-slider .ui-slider-bg {
-	background-color:#001848 !important;
-}
