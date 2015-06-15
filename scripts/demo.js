@@ -1,4 +1,5 @@
 /* Datepicker Extend - JQuery UI and Mobile */
+
 /* http://cdn.rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.1/jquery.mobile.datepicker.js */
 (function($, undefined) {
 	$.widget('mobile.date', {
