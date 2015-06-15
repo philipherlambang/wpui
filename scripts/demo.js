@@ -58,9 +58,7 @@
 			inline: false
 		},
 		_create: function() {
-			var calendar;
-			var interval;
-			var that = this;
+			var calendar, interval, that = this;
 
 			if (this.options.inline) {
 				this.options.altField = this.element;
@@ -132,8 +130,7 @@
 /* Selectmenu Extend - JQuery Mobile */
 (function($) {
 	function pageIsSelectmenuDialog(page) {
-		var isDialog = false;
-		var id = page && page.attr('id');
+		var isDialog = false, id = page && page.attr('id');
 
 		$('.filterable-select').each(function() {
 			if ($(this).attr('id') + '-dialog' === id) {
@@ -146,10 +143,10 @@
 	}
 
 	$.mobile.document.on('selectmenucreate', '.filterable-select', function(event) {
-		var input;
-		var selectmenu = $(event.target);
-		var list = $('#' + selectmenu.attr('id') + '-menu');
-		var form = list.jqmData('filter-form');
+		var input,
+			selectmenu = $(event.target),
+			list = $('#' + selectmenu.attr('id') + '-menu'),
+			form = list.jqmData('filter-form');
 
 		if (!form) {
 			input = $('<input data-type="search"></input>');
@@ -166,8 +163,7 @@
 		});
 
 	}).on('pagecontainerbeforeshow', function(event, data) {
-		var listview;
-		var form;
+		var listview, form;
 
 		if (!pageIsSelectmenuDialog(data.toPage)) {
 			return;
@@ -181,8 +177,7 @@
 		listview.before(form);
 
 	}).on('pagecontainerhide', function(event, data) {
-		var listview;
-		var form;
+		var listview, form;
 
 		if (!pageIsSelectmenuDialog(data.toPage)) {
 			return;
